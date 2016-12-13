@@ -69,6 +69,7 @@ EOF
 
 echo "$PUBLIC_KEY" > $YUM_REPO_KEY_FILE
 
+# Trust the saltstack repository signing key
 rpm --import $YUM_REPO_KEY_FILE
 
 # Install salt minion
@@ -108,6 +109,8 @@ pillar_roots:
   base:
     - /srv/salt/tests/pillar
 EOF
+
+EOSCRIPT
 
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
