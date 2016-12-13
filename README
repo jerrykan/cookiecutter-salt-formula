@@ -1,0 +1,8 @@
+A basic cookie cutter for salt formulas. It requires the cookie cutter tool
+which can be installed by running:
+
+  $ sudo apt-get install cookiecutter
+
+The starting files for a new salt formula can then be created by running
+
+  $ cookiecutter https://github.com/jerrykan/cookiecutter-salt-formula.git
