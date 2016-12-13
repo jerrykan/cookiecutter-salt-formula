@@ -1,0 +1,4 @@
+{%- set name = cookiecutter.formula_name -%}
+{{ '{%- import_yaml "' }} {{- name -}} {{ '/defaults.yaml" as defaults -%}' }}
+
+{{ '{%- set ' }} {{- name -}} {{ " = salt['pillar.get']('" }} {{- name -}} {{ ":lookup', defaults." }} {{- name -}} {{ ', merge=True) -%}' }}

@@ -1,0 +1,4 @@
+{
+    "formula_name": null,
+    "vagrant_box": ["debian8", "centos7"]
+}
